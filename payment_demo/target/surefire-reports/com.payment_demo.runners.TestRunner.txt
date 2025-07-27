@@ -1,0 +1,413 @@
+-------------------------------------------------------------------------------
+Test set: com.payment_demo.runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 1.46 s <<< FAILURE! - in com.payment_demo.runners.TestRunner
+End-to-End Payment Processing Workflow.1 - Payment is initiated  Time elapsed: 0.312 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'the sanction list is:' and 7 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the sanction list is:")
+public void the_sanction_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the fraud list is:")
+public void the_fraud_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the debtor account is <isActive>")
+public void the_debtor_account_is_is_active() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the debtor account balance is <debtorBalance>")
+public void the_debtor_account_balance_is_debtor_balance() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the creditor name is {string}")
+public void the_creditor_name_is(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the creditor account number is <creditorAccountNumber>")
+public void the_creditor_account_number_is_creditor_account_number() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the amount is <amount>")
+public void the_amount_is_amount() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the payment is initiated")
+public void the_payment_is_initiated() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+End-to-End Payment Processing Workflow.2 - Qualification of Payment  Time elapsed: 0.024 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'the sanction list is:' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the sanction list is:")
+public void the_sanction_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the fraud list is:")
+public void the_fraud_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Then("check qualification status for debtor account <isActive> with clearing house {string}, amount <amount>, creditor name {string}, creditor account number <creditorAccountNumber>")
+public void check_qualification_status_for_debtor_account_is_active_with_clearing_house_amount_amount_creditor_name_creditor_account_number_creditor_account_number(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+End-to-End Payment Processing Workflow.3 - Sanction Check  Time elapsed: 0.016 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'the sanction list is:' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the sanction list is:")
+public void the_sanction_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the fraud list is:")
+public void the_fraud_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Then("sanction check for creditor {string}")
+public void sanction_check_for_creditor(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+End-to-End Payment Processing Workflow.4 - Fraud Check  Time elapsed: 0.036 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'the sanction list is:' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the sanction list is:")
+public void the_sanction_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the fraud list is:")
+public void the_fraud_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Then("fraud check for creditor account number <creditorAccountNumber>")
+public void fraud_check_for_creditor_account_number_creditor_account_number() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+End-to-End Payment Processing Workflow.5 - Funds Check  Time elapsed: 0.006 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'the sanction list is:' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the sanction list is:")
+public void the_sanction_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the fraud list is:")
+public void the_fraud_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Then("funds are available in debtor account <debtorAccountNumber>")
+public void funds_are_available_in_debtor_account_debtor_account_number() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+End-to-End Payment Processing Workflow.6 - Clearing House Check  Time elapsed: 0.024 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'the sanction list is:' and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the sanction list is:")
+public void the_sanction_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the fraud list is:")
+public void the_fraud_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the clearing house name is {string}")
+public void the_clearing_house_name_is(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the clearing house status is {string}")
+public void the_clearing_house_status_is(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("clearing house check for {string} with status {string}")
+public void clearing_house_check_for_with_status(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+End-to-End Payment Processing Workflow.7 - Transaction Status Evaluation #1  Time elapsed: 0.035 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'the sanction list is:' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the sanction list is:")
+public void the_sanction_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the fraud list is:")
+public void the_fraud_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Then("transaction status should be evaluated")
+public void transaction_status_should_be_evaluated() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+End-to-End Payment Processing Workflow.7 - Transaction Status Evaluation #2  Time elapsed: 0.005 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'the sanction list is:' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the sanction list is:")
+public void the_sanction_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the fraud list is:")
+public void the_fraud_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Then("transaction status should be evaluated")
+public void transaction_status_should_be_evaluated() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+End-to-End Payment Processing Workflow.7 - Transaction Status Evaluation #3  Time elapsed: 0.032 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'the sanction list is:' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the sanction list is:")
+public void the_sanction_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the fraud list is:")
+public void the_fraud_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Then("transaction status should be evaluated")
+public void transaction_status_should_be_evaluated() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+End-to-End Payment Processing Workflow.7 - Transaction Status Evaluation #4  Time elapsed: 0.018 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'the sanction list is:' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the sanction list is:")
+public void the_sanction_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the fraud list is:")
+public void the_fraud_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Then("transaction status should be evaluated")
+public void transaction_status_should_be_evaluated() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+End-to-End Payment Processing Workflow.7 - Transaction Status Evaluation #5  Time elapsed: 0.005 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'the sanction list is:' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the sanction list is:")
+public void the_sanction_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Given("the fraud list is:")
+public void the_fraud_list_is(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@Then("transaction status should be evaluated")
+public void transaction_status_should_be_evaluated() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
