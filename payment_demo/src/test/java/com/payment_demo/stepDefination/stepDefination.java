@@ -43,7 +43,7 @@ public class stepDefination {
         }
     }
 
-    @Given("the debtor account balance is {double}")
+    @And("the debtor account balance is {double}")
     public void debtorAccountBalanceIs(double balance)
     {
         this.debtorAccountBalance = balance;
@@ -56,25 +56,25 @@ public class stepDefination {
         this.clearingHouseName = name;
     }
 
-    @Given("the clearing house status is {string}")
+    @And("the clearing house status is {string}")
     public void clearingHouseStatusIs(String status)
     {
         this.clearingHouseStatus = status;
     }
 
-    @Given("the creditor name is {string}")
+    @And("the creditor name is {string}")
     public void creditorNameIs(String name)
     {
         this.creditorName = name;
     }
 
-    @Given("the creditor account number is {long}")
+    @And("the creditor account number is {long}")
     public void creditorAccountNumberIs(long accountNumber)
     {
         this.creditorAccountNumber = accountNumber;
     }
 
-    @Given("the amount is {double}")
+    @And("the amount is {double}")
     public void amountIs(double amount)
     {
         this.amount = amount;
@@ -98,7 +98,6 @@ public class stepDefination {
 
     @When("the payment is initiated")
     public void paymentIsInitiated() {
-        // Logic to initiate the payment
         Assert.assertTrue("Debtor account must be active to initiate payment",isActive);
         this.initiationStatus= "Payment initiated successfully";
         Assert.assertTrue("Payment initiation successfully",this.initiationStatus.equals("Payment initiated successfully"));
@@ -107,7 +106,6 @@ public class stepDefination {
 
     @Then("check qualification status for debtor account {bool} with clearing house {string}, amount {double}, creditor name {string}, creditor account number {long}")
     public void qualificationCheck(boolean isActive, String clearingHouseName, double amount, String creditorName, long creditorAccountNumber) {
-        // Logic to check qualification
         try
         {
             Assert.assertTrue("Debtor account must be active for qualification check",isActive);
@@ -126,7 +124,6 @@ public class stepDefination {
 
     @Then("sanction check for creditor {string}")
     public void sanctionCheck(String creditorName) {
-        // Logic to check sanctions
         if(sanctionList.contains(creditorName))
         {
             
@@ -141,7 +138,6 @@ public class stepDefination {
 
     @Then("fraud check for creditor account number {long}")
     public void fraudCheck(long creditorAccountNumber) {
-        // Logic to check fraud
         if(fraudList.contains(creditorAccountNumber))
         {
             Assert.fail("Fraud check failed for creditor account number: " + creditorAccountNumber);
@@ -155,7 +151,6 @@ public class stepDefination {
 
     @Then("funds are available in debtor account {long}")
     public void fundsAvailable(long debtorAccountNumber) {
-        // Logic to check funds availability
         if(debtorAccountBalance >= amount)
         {
             this.fundStatus = "Funds are available";
@@ -170,7 +165,6 @@ public class stepDefination {
 
     @Then("clearing house check for {string} with status {string}")
     public void clearingHouseCheck(String clearingHouseName, String status) {
-        // Logic to check clearing house
         if(clearingHouseName.equals(this.clearingHouseName) && status.equals(this.clearingHouseStatus))
         {
             this.clearingHouseCheck = "Clearing house check passed";
@@ -185,7 +179,6 @@ public class stepDefination {
 
     @Then("transaction status ")
     public void transactionStatus() {
-        // Logic to determine transaction status
         if (this.qualificationStatus.equals("Failed") || this.sanctionStatus.contains("Creditor is on the sanction list") ||
             this.fraudStatus.contains("Creditor account number is on the fraud list") || this.fundStatus.equals("Insufficient funds") ||
             this.clearingHouseCheck.contains("Clearing house check failed")) {

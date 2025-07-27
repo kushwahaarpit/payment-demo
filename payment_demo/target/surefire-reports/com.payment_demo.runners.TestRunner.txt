@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.payment_demo.runners.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 1.46 s <<< FAILURE! - in com.payment_demo.runners.TestRunner
-End-to-End Payment Processing Workflow.1 - Payment is initiated  Time elapsed: 0.312 s  <<< ERROR!
+Tests run: 11, Failures: 0, Errors: 11, Skipped: 0, Time elapsed: 1.101 s <<< FAILURE! - in com.payment_demo.runners.TestRunner
+End-to-End Payment Processing Workflow.1 - Payment is initiated  Time elapsed: 0.258 s  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
 The step 'the sanction list is:' and 7 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
@@ -61,7 +61,7 @@ public void the_payment_is_initiated() {
 }
 
 
-End-to-End Payment Processing Workflow.2 - Qualification of Payment  Time elapsed: 0.024 s  <<< ERROR!
+End-to-End Payment Processing Workflow.2 - Qualification of Payment  Time elapsed: 0.009 s  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
 The step 'the sanction list is:' and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
@@ -129,7 +129,7 @@ public void sanction_check_for_creditor(String string) {
 }
 
 
-End-to-End Payment Processing Workflow.4 - Fraud Check  Time elapsed: 0.036 s  <<< ERROR!
+End-to-End Payment Processing Workflow.4 - Fraud Check  Time elapsed: 0.024 s  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
 The step 'the sanction list is:' and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
@@ -163,7 +163,7 @@ public void fraud_check_for_creditor_account_number_creditor_account_number() {
 }
 
 
-End-to-End Payment Processing Workflow.5 - Funds Check  Time elapsed: 0.006 s  <<< ERROR!
+End-to-End Payment Processing Workflow.5 - Funds Check  Time elapsed: 0.021 s  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
 The step 'the sanction list is:' and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
@@ -197,7 +197,7 @@ public void funds_are_available_in_debtor_account_debtor_account_number() {
 }
 
 
-End-to-End Payment Processing Workflow.6 - Clearing House Check  Time elapsed: 0.024 s  <<< ERROR!
+End-to-End Payment Processing Workflow.6 - Clearing House Check  Time elapsed: 0.037 s  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
 The step 'the sanction list is:' and 4 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
@@ -241,7 +241,7 @@ public void clearing_house_check_for_with_status(String string, String string2) 
 }
 
 
-End-to-End Payment Processing Workflow.7 - Transaction Status Evaluation #1  Time elapsed: 0.035 s  <<< ERROR!
+End-to-End Payment Processing Workflow.7 - Transaction Status Evaluation #1  Time elapsed: 0.007 s  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
 The step 'the sanction list is:' and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
@@ -275,7 +275,7 @@ public void transaction_status_should_be_evaluated() {
 }
 
 
-End-to-End Payment Processing Workflow.7 - Transaction Status Evaluation #2  Time elapsed: 0.005 s  <<< ERROR!
+End-to-End Payment Processing Workflow.7 - Transaction Status Evaluation #2  Time elapsed: 0.003 s  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
 The step 'the sanction list is:' and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
@@ -309,7 +309,7 @@ public void transaction_status_should_be_evaluated() {
 }
 
 
-End-to-End Payment Processing Workflow.7 - Transaction Status Evaluation #3  Time elapsed: 0.032 s  <<< ERROR!
+End-to-End Payment Processing Workflow.7 - Transaction Status Evaluation #3  Time elapsed: 0.013 s  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
 The step 'the sanction list is:' and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
@@ -343,7 +343,7 @@ public void transaction_status_should_be_evaluated() {
 }
 
 
-End-to-End Payment Processing Workflow.7 - Transaction Status Evaluation #4  Time elapsed: 0.018 s  <<< ERROR!
+End-to-End Payment Processing Workflow.7 - Transaction Status Evaluation #4  Time elapsed: 0.004 s  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
 The step 'the sanction list is:' and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
@@ -377,7 +377,7 @@ public void transaction_status_should_be_evaluated() {
 }
 
 
-End-to-End Payment Processing Workflow.7 - Transaction Status Evaluation #5  Time elapsed: 0.005 s  <<< ERROR!
+End-to-End Payment Processing Workflow.7 - Transaction Status Evaluation #5  Time elapsed: 0.015 s  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
 The step 'the sanction list is:' and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
