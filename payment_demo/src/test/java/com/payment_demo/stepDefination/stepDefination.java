@@ -11,46 +11,46 @@ import java.util.stream.Collectors;
 public class stepDefination {
 
     private boolean isActive;
-    private double debtorAccountBalance;
+    private Double debtorAccountBalance;
     private String clearingHouseName;
     private String clearingHouseStatus;
     private String creditorName;
-    private long creditorAccountNumber;
-    private double amount;
+    private Long creditorAccountNumber;
+    private Double amount;
 
     private List<String> sanctionList;
     private List<Long> fraudList;
 
-    private String initiationStatus = "";
-    private String qualificationStatus = "Passed";
-    private String sanctionStatus = "";
-    private String fraudStatus = "";
-    private String fundStatus = "";
-    private String clearingHouseCheck = "";
-    private String transactionStatus = "";
+    private boolean initiationStatus;
+    private boolean qualificationStatus;
+    private boolean sanctionStatus;
+    private boolean fraudStatus;
+    private boolean fundStatus;
+    private boolean clearingHouseCheck;
+    private boolean transactionStatus;
 
-    @Given("the debtor account is {bool}")
-    public void debtorAccountIs(boolean isActive)
+    @Given("the debtor account is {string}")
+    public void debtorAccountIs(String isActiveStr)
     {
-        this.isActive = isActive;
-        if(isActive==true)
+        this.isActive = Boolean.parseBoolean(isActiveStr);
+        if(this.isActive)
         {
-            Assert.assertTrue("Debtor account must be active", isActive);
+            Assert.assertTrue("Debtor account must be active", this.isActive);
         }
         else
         {
-            Assert.assertTrue("Debtor account is not active",!isActive);
+            Assert.assertTrue("Debtor account is not active", !this.isActive);
         }
     }
 
-    @And("the debtor account balance is {double}")
-    public void debtorAccountBalanceIs(double balance)
-    {
-        this.debtorAccountBalance = balance;
-
+    @And("the debtor account balance is {string}")
+    public void debtorAccountBalanceIs(String balanceStr) {
+        this.debtorAccountBalance = Double.parseDouble(balanceStr);
     }
 
-    @Given("the clearing house name is {string}")
+    
+
+    @And("the clearing house name is {string}")
     public void clearingHouseNameIs(String name)
     {
         this.clearingHouseName = name;
@@ -68,26 +68,29 @@ public class stepDefination {
         this.creditorName = name;
     }
 
-    @And("the creditor account number is {long}")
-    public void creditorAccountNumberIs(long accountNumber)
-    {
-        this.creditorAccountNumber = accountNumber;
+    @And("the creditor account number is {string}")
+    public void creditorAccountNumberIs(String accountNumberStr) {
+        this.creditorAccountNumber = Long.parseLong(accountNumberStr);
+        Assert.assertNotNull("Creditor account number should be set", this.creditorAccountNumber);
     }
 
-    @And("the amount is {double}")
-    public void amountIs(double amount)
-    {
-        this.amount = amount;
+    
+
+    @And("the amount is {string}")
+    public void amountIs(String amountStr) {
+        this.amount = Double.parseDouble(amountStr);
     }
 
-    @Given("the sanction list is")
+    
+
+    @And("the sanction list is:")
     public void sanctionListIs(io.cucumber.datatable.DataTable table)
     {
         this.sanctionList = table.asList(String.class);
     }
 
 
-    @Given("the fraud list is")
+    @And("the fraud list is:")
     public void fraudListIs(io.cucumber.datatable.DataTable table)
     {
         List<String> strList = table.asList();
@@ -98,95 +101,133 @@ public class stepDefination {
 
     @When("the payment is initiated")
     public void paymentIsInitiated() {
-        Assert.assertTrue("Debtor account must be active to initiate payment",isActive);
-        this.initiationStatus= "Payment initiated successfully";
-        Assert.assertTrue("Payment initiation successfully",this.initiationStatus.equals("Payment initiated successfully"));
-
-    }
-
-    @Then("check qualification status for debtor account {bool} with clearing house {string}, amount {double}, creditor name {string}, creditor account number {long}")
-    public void qualificationCheck(boolean isActive, String clearingHouseName, double amount, String creditorName, long creditorAccountNumber) {
-        try
-        {
-            Assert.assertTrue("Debtor account must be active for qualification check",isActive);
-            Assert.assertNotNull("Clearing house name must not be null",clearingHouseName);
-            Assert.assertNotNull("Amount must not be null", amount);
-            Assert.assertNotNull("Creditor name must not be null",creditorName);
-            Assert.assertNotNull("Creditor account number must not be null",creditorAccountNumber);
-            
-        }
-        catch (Exception e)
-        {
-            this.qualificationStatus = "Failed";
-            Assert.fail("Qualification failed: " + e.getMessage()); 
+        if (!isActive) {
+            this.initiationStatus = false;
+            Assert.fail("Payment cannot be initiated: Debtor account is not active");
+        } else {
+            this.initiationStatus = true;
+            Assert.assertTrue("Payment initiated", initiationStatus);
         }
     }
+
+
+    @Then("check qualification status for debtor account {string} with clearing house {string}, amount {string}, creditor name {string}, creditor account number {string}")
+    public void qualificationCheck(String isActiveStr, String clearingHouseName, String amountStr, String creditorName, String creditorAccountNumberStr) {
+        if (!initiationStatus) {
+            this.qualificationStatus = false;
+            Assert.fail("Skipping qualification check: Payment not initiated");
+            return;
+        }
+
+        try {
+            boolean isActive = Boolean.parseBoolean(isActiveStr);
+            double amount = Double.parseDouble(amountStr);
+            long creditorAccountNumber = Long.parseLong(creditorAccountNumberStr);
+
+            Assert.assertTrue("Debtor must be active", isActive);
+            Assert.assertNotNull(clearingHouseName);
+            Assert.assertNotNull(creditorName);
+
+            this.qualificationStatus = true;
+        } catch (Exception e) {
+            this.qualificationStatus = false;
+            Assert.fail("Qualification failed: " + e.getMessage());
+        }
+    }
+
+
+    
 
     @Then("sanction check for creditor {string}")
     public void sanctionCheck(String creditorName) {
-        if(sanctionList.contains(creditorName))
-        {
-            
+        if (!qualificationStatus) {
+            this.sanctionStatus = false;
+            Assert.fail("Skipping sanction check: Qualification failed");
+            return;
+        }
+
+        if (sanctionList.contains(creditorName)) {
+            this.sanctionStatus = false;
             Assert.fail("Sanction check failed for creditor: " + creditorName);
-        }
-        else
-        {
-            this.sanctionStatus = "Creditor is not on the sanction list";
-            Assert.assertTrue("Sanction check passed",!sanctionList.contains(creditorName));
+        } else {
+            this.sanctionStatus = true;
+            Assert.assertTrue("Sanction check passed", true);
         }
     }
 
-    @Then("fraud check for creditor account number {long}")
-    public void fraudCheck(long creditorAccountNumber) {
-        if(fraudList.contains(creditorAccountNumber))
-        {
-            Assert.fail("Fraud check failed for creditor account number: " + creditorAccountNumber);
+    @Then("fraud check for creditor account number {string}")
+    public void fraudCheck(String creditorAccountNumberStr) {
+        if (!sanctionStatus) {
+            this.fraudStatus = false;
+            Assert.fail("Skipping fraud check: Sanction check failed");
+            return;
         }
-        else
-        {
-            this.fraudStatus = "Creditor account number is not on the fraud list";
-            Assert.assertTrue("Fraud check passed", !fraudList.contains(creditorAccountNumber));
+
+        long creditorAccountNumber = Long.parseLong(creditorAccountNumberStr);
+        if (fraudList.contains(creditorAccountNumber)) {
+            this.fraudStatus = false;
+            Assert.fail("Fraud detected for creditor account: " + creditorAccountNumber);
+        } else {
+            this.fraudStatus = true;
+            Assert.assertTrue("Fraud check passed", true);
         }
     }
 
-    @Then("funds are available in debtor account {long}")
-    public void fundsAvailable(long debtorAccountNumber) {
-        if(debtorAccountBalance >= amount)
-        {
-            this.fundStatus = "Funds are available";
-            Assert.assertTrue("Funds are available in debtor account",debtorAccountBalance >= amount);
+
+
+
+    @Then("funds are available in debtor account {string}")
+    public void fundsAvailable(String debtorAccountNumberStr) {
+        if (!fraudStatus) {
+            this.fundStatus = false;
+            Assert.fail("Skipping fund check: Fraud check failed");
+            return;
         }
-        else
-        {
-            this.fundStatus = "Insufficient funds";
-            Assert.fail("Insufficient funds in debtor account");
+
+        long debtorAccountNumber = Long.parseLong(debtorAccountNumberStr);
+        if (debtorAccountBalance >= amount) {
+            this.fundStatus = true;
+            Assert.assertTrue("Sufficient funds available", true);
+        } else {
+            this.fundStatus = false;
+            Assert.fail("Insufficient funds");
         }
     }
 
+ 
     @Then("clearing house check for {string} with status {string}")
     public void clearingHouseCheck(String clearingHouseName, String status) {
-        if(clearingHouseName.equals(this.clearingHouseName) && status.equals(this.clearingHouseStatus))
-        {
-            this.clearingHouseCheck = "Clearing house check passed";
-            Assert.assertTrue("Clearing house check passed",clearingHouseName.equals(this.clearingHouseName) && status.equals(this.clearingHouseStatus));
+        if (!fundStatus) {
+            this.clearingHouseCheck = false;
+            Assert.fail("Skipping clearing house check: Fund check failed");
+            return;
         }
-        else
-        {
-            this.clearingHouseCheck = "Clearing house check failed";
-            Assert.fail("Clearing house check failed for " + clearingHouseName + " with status " + status);
+
+        if (clearingHouseName.equals(this.clearingHouseName) && status.equals(this.clearingHouseStatus)) {
+            this.clearingHouseCheck = true;
+            Assert.assertTrue("Clearing house check passed", true);
+        } else {
+            this.clearingHouseCheck = false;
+            Assert.fail("Clearing house check failed");
         }
     }
 
-    @Then("transaction status ")
+    @Then("transaction status should be evaluated")
     public void transactionStatus() {
-        if (this.qualificationStatus.equals("Failed") || this.sanctionStatus.contains("Creditor is on the sanction list") ||
-            this.fraudStatus.contains("Creditor account number is on the fraud list") || this.fundStatus.equals("Insufficient funds") ||
-            this.clearingHouseCheck.contains("Clearing house check failed")) {
-            this.transactionStatus = "Transaction failed";
-            Assert.fail("Transaction failed due to one or more checks not passing");
+        if (initiationStatus && qualificationStatus && sanctionStatus && fraudStatus && fundStatus && clearingHouseCheck) {
+            this.transactionStatus = true;
+            Assert.assertTrue("Transaction completed successfully", true);
         } else {
-            this.transactionStatus = "Transaction successful";
-            Assert.assertTrue("Transaction completed successfully",this.transactionStatus.equals("Transaction successful"));
+            System.out.println("Transaction failed at one of the steps:");
+            System.out.println("initiationStatus: " + initiationStatus);
+            System.out.println("qualificationStatus: " + qualificationStatus);
+            System.out.println("sanctionStatus: " + sanctionStatus);
+            System.out.println("fraudStatus: " + fraudStatus);
+            System.out.println("fundStatus: " + fundStatus);
+            System.out.println("clearingHouseCheck: " + clearingHouseCheck);
+
+            this.transactionStatus = false;
+            Assert.fail("Transaction failed due to one or more checks failing");
         }
     }
 }
