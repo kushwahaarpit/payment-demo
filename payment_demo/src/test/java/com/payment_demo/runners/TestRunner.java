@@ -8,10 +8,13 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
     features = "src/test/java/com/payment_demo/features",
     glue = "com.payment_demo.stepDefination",
-    plugin = {"pretty", "html:target/cucumber.html"},
-    monochrome = true
+    plugin = {
+        "pretty",                                      
+        "html:target/cucumber-reports/cucumber.html"  
+    },
+    monochrome = true                                 
+                       
 )
 
 public class TestRunner {
-    
 }

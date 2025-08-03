@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.payment_demo.runners.TestRunner" time="2.903" tests="6" errors="6" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.payment_demo.runners.TestRunner" time="4.453" tests="5" errors="0" skipped="0" failures="4">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
-    <property name="sun.java.command" value="C:\Users\arpit\AppData\Local\Temp\surefire5048778901942646966\surefirebooter-20250728190826601_3.jar C:\Users\arpit\AppData\Local\Temp\surefire5048778901942646966 2025-07-28T19-08-26_366-jvmRun1 surefire-20250728190826601_1tmp surefire_0-20250728190826601_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\arpit\AppData\Local\Temp\surefire14430867267429583066\surefirebooter-20250803130219706_3.jar C:\Users\arpit\AppData\Local\Temp\surefire14430867267429583066 2025-08-03T13-02-18_105-jvmRun1 surefire-20250803130219706_1tmp surefire_0-20250803130219706_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\arpit\Desktop\Desktop\payment_demo\payment_demo\target\test-classes;C:\Users\arpit\Desktop\Desktop\payment_demo\payment_demo\target\classes;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-java\4.12.1\selenium-java-4.12.1.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-api\4.12.1\selenium-api-4.12.1.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.12.1\selenium-chrome-driver-4.12.1.jar;C:\Users\arpit\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\arpit\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\arpit\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\arpit\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\arpit\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\arpit\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\arpit\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\arpit\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.12.1\selenium-chromium-driver-4.12.1.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-json\4.12.1\selenium-json-4.12.1.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.12.1\selenium-manager-4.12.1.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v114\4.12.1\selenium-devtools-v114-4.12.1.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v115\4.12.1\selenium-devtools-v115-4.12.1.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v116\4.12.1\selenium-devtools-v116-4.12.1.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.12.1\selenium-devtools-v85-4.12.1.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.12.1\selenium-edge-driver-4.12.1.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.12.1\selenium-firefox-driver-4.12.1.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-http\4.12.1\selenium-http-4.12.1.jar;C:\Users\arpit\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.12.1\selenium-ie-driver-4.12.1.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.12.1\selenium-remote-driver-4.12.1.jar;C:\Users\arpit\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\arpit\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\arpit\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\arpit\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\arpit\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\arpit\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\arpit\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\arpit\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final.jar;C:\Users\arpit\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final.jar;C:\Users\arpit\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\arpit\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\arpit\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\arpit\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\arpit\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\arpit\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\arpit\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\arpit\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\arpit\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\arpit\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\arpit\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\arpit\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\arpit\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\arpit\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\arpit\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\arpit\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\arpit\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\arpit\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\arpit\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\arpit\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\arpit\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\arpit\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\arpit\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\arpit\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\arpit\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\arpit\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\arpit\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-os\4.12.1\selenium-os-4.12.1.jar;C:\Users\arpit\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.12.1\selenium-safari-driver-4.12.1.jar;C:\Users\arpit\.m2\repository\org\seleniumhq\selenium\selenium-support\4.12.1\selenium-support-4.12.1.jar;C:\Users\arpit\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\arpit\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\arpit\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\arpit\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\arpit\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\arpit\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\arpit\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\arpit\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\arpit\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\arpit\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\arpit\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\arpit\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\arpit\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\arpit\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\arpit\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\arpit\.m2\repository\io\cucumber\cucumber-junit\7.14.0\cucumber-junit-7.14.0.jar;C:\Users\arpit\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\arpit\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\arpit\AppData\Local\Temp\surefire5048778901942646966\surefirebooter-20250728190826601_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\arpit\AppData\Local\Temp\surefire14430867267429583066\surefirebooter-20250803130219706_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="19.0.1+10-21"/>
@@ -58,556 +58,150 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="End-to-End Payment Processing #1" classname="End-to-End Payment Processing Workflow" time="0.387">
-    <error message="The step &apos;the debtor account is &quot;&quot;true&quot;&quot;&apos; and 11 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the debtor account is \&quot;\&quot;true\&quot;\&quot;&quot;)&#10;public void the_debtor_account_is_true() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the debtor account balance is \&quot;\&quot;{double}\&quot;\&quot;&quot;)&#10;public void the_debtor_account_balance_is(Double double1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the creditor name is \&quot;\&quot;Rahul\&quot;\&quot;&quot;)&#10;public void the_creditor_name_is_rahul() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the creditor account number is \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void the_creditor_account_number_is(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the amount is \&quot;\&quot;{double}\&quot;\&quot;&quot;)&#10;public void the_amount_is(Double double1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the clearing house name is \&quot;\&quot;RTGS\&quot;\&quot;&quot;)&#10;public void the_clearing_house_name_is_rtgs() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the clearing house status is \&quot;\&quot;ACTIVE\&quot;\&quot;&quot;)&#10;public void the_clearing_house_status_is_active() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;check qualification status for debtor account \&quot;\&quot;true\&quot;\&quot; with clearing house \&quot;\&quot;RTGS\&quot;\&quot;, amount \&quot;\&quot;{double}\&quot;\&quot;, creditor name \&quot;\&quot;Rahul\&quot;\&quot;, creditor account number \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void check_qualification_status_for_debtor_account_true_with_clearing_house_rtgs_amount_creditor_name_rahul_creditor_account_number(Double double1, Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;sanction check for creditor \&quot;\&quot;Rahul\&quot;\&quot;&quot;)&#10;public void sanction_check_for_creditor_rahul() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;fraud check for creditor account number \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void fraud_check_for_creditor_account_number(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;funds are available in debtor account \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void funds_are_available_in_debtor_account(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;clearing house check for \&quot;\&quot;RTGS\&quot;\&quot; with status \&quot;\&quot;ACTIVE\&quot;\&quot;&quot;)&#10;public void clearing_house_check_for_rtgs_with_status_active() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
-The step 'the debtor account is ""true""' and 11 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the debtor account is \"\"true\"\"")
-public void the_debtor_account_is_true() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the debtor account balance is \"\"{double}\"\"")
-public void the_debtor_account_balance_is(Double double1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the creditor name is \"\"Rahul\"\"")
-public void the_creditor_name_is_rahul() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the creditor account number is \"\"{int}\"\"")
-public void the_creditor_account_number_is(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the amount is \"\"{double}\"\"")
-public void the_amount_is(Double double1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the clearing house name is \"\"RTGS\"\"")
-public void the_clearing_house_name_is_rtgs() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the clearing house status is \"\"ACTIVE\"\"")
-public void the_clearing_house_status_is_active() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("check qualification status for debtor account \"\"true\"\" with clearing house \"\"RTGS\"\", amount \"\"{double}\"\", creditor name \"\"Rahul\"\", creditor account number \"\"{int}\"\"")
-public void check_qualification_status_for_debtor_account_true_with_clearing_house_rtgs_amount_creditor_name_rahul_creditor_account_number(Double double1, Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("sanction check for creditor \"\"Rahul\"\"")
-public void sanction_check_for_creditor_rahul() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("fraud check for creditor account number \"\"{int}\"\"")
-public void fraud_check_for_creditor_account_number(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("funds are available in debtor account \"\"{int}\"\"")
-public void funds_are_available_in_debtor_account(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("clearing house check for \"\"RTGS\"\" with status \"\"ACTIVE\"\"")
-public void clearing_house_check_for_rtgs_with_status_active() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-]]></error>
+  <testcase name="Process payment with various flow conditions #1" classname="Basic Payment Flow with Validations" time="0.563">
     <system-out><![CDATA[
-Scenario Outline: End-to-End Payment Processing                                                                                                                                 # src/test/java/com/payment_demo/features/payment.feature:30
-  Given the sanction list is:                                                                                                                                                   # com.payment_demo.stepDefination.stepDefination.sanctionListIs(io.cucumber.datatable.DataTable)
-    | Arpit       |
-    | Blacklisted |
-    | Terror Org  |
-  And the fraud list is:                                                                                                                                                        # com.payment_demo.stepDefination.stepDefination.fraudListIs(io.cucumber.datatable.DataTable)
+Scenario Outline: Process payment with various flow conditions # src/test/java/com/payment_demo/features/payment.feature:25
+  Given the sanction list is:                                  # com.payment_demo.stepDefination.stepDefination.theSanctionListIs(io.cucumber.datatable.DataTable)
+    | John Doe   |
+    | BannedUser |
+  And the fraud list is:                                       # com.payment_demo.stepDefination.stepDefination.theFraudListIs(io.cucumber.datatable.DataTable)
     | 1234567890 |
-    | 9999999999 |
-  Given the debtor account is ""true""
-  And the debtor account balance is ""5000.00""
-  And the creditor name is ""Rahul""
-  And the creditor account number is ""1231231234""
-  And the amount is ""1000.00""
-  And the clearing house name is ""RTGS""
-  And the clearing house status is ""ACTIVE""
-  When the payment is initiated                                                                                                                                                 # com.payment_demo.stepDefination.stepDefination.paymentIsInitiated()
-  Then check qualification status for debtor account ""true"" with clearing house ""RTGS"", amount ""1000.00"", creditor name ""Rahul"", creditor account number ""1231231234""
-  Then sanction check for creditor ""Rahul""
-  Then fraud check for creditor account number ""1231231234""
-  Then funds are available in debtor account ""9876543210""
-  Then clearing house check for ""RTGS"" with status ""ACTIVE""
-  Then transaction status should be evaluated                                                                                                                                   # com.payment_demo.stepDefination.stepDefination.transactionStatus()
+    | 9876543210 |
+  Given the debtor account is "active"                         # com.payment_demo.stepDefination.stepDefination.theDebtorAccountIs(java.lang.String)
+  And the debtor account balance is "10000"                    # com.payment_demo.stepDefination.stepDefination.theDebtorAccountBalanceIs(java.lang.String)
+  And the transfer amount is "5000"                            # com.payment_demo.stepDefination.stepDefination.theTransferAmountIs(java.lang.String)
+  And the creditor name is "Alice Kumar"                       # com.payment_demo.stepDefination.stepDefination.theCreditorNameIs(java.lang.String)
+  And the creditor account number is "1111222233"              # com.payment_demo.stepDefination.stepDefination.theCreditorAccountNumberIs(java.lang.String)
+  When the payment is initiated                                # com.payment_demo.stepDefination.stepDefination.thePaymentIsInitiated()
+  Then perform sanction check                                  # com.payment_demo.stepDefination.stepDefination.performSanctionCheck()
+  Then perform fraud check                                     # com.payment_demo.stepDefination.stepDefination.performFraudCheck()
+  Then perform fund check                                      # com.payment_demo.stepDefination.stepDefination.performFundCheck()
+✅ Transaction completed successfully.
+  Then evaluate transaction status                             # com.payment_demo.stepDefination.stepDefination.evaluateTransactionStatus()
 ]]></system-out>
   </testcase>
-  <testcase name="End-to-End Payment Processing #2" classname="End-to-End Payment Processing Workflow" time="0.081">
-    <error message="The step &apos;the debtor account is &quot;&quot;true&quot;&quot;&apos; and 11 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the debtor account is \&quot;\&quot;true\&quot;\&quot;&quot;)&#10;public void the_debtor_account_is_true() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the debtor account balance is \&quot;\&quot;{double}\&quot;\&quot;&quot;)&#10;public void the_debtor_account_balance_is(Double double1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the creditor name is \&quot;\&quot;Arpit\&quot;\&quot;&quot;)&#10;public void the_creditor_name_is_arpit() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the creditor account number is \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void the_creditor_account_number_is(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the amount is \&quot;\&quot;{double}\&quot;\&quot;&quot;)&#10;public void the_amount_is(Double double1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the clearing house name is \&quot;\&quot;NEFT\&quot;\&quot;&quot;)&#10;public void the_clearing_house_name_is_neft() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the clearing house status is \&quot;\&quot;ACTIVE\&quot;\&quot;&quot;)&#10;public void the_clearing_house_status_is_active() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;check qualification status for debtor account \&quot;\&quot;true\&quot;\&quot; with clearing house \&quot;\&quot;NEFT\&quot;\&quot;, amount \&quot;\&quot;{double}\&quot;\&quot;, creditor name \&quot;\&quot;Arpit\&quot;\&quot;, creditor account number \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void check_qualification_status_for_debtor_account_true_with_clearing_house_neft_amount_creditor_name_arpit_creditor_account_number(Double double1, Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;sanction check for creditor \&quot;\&quot;Arpit\&quot;\&quot;&quot;)&#10;public void sanction_check_for_creditor_arpit() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;fraud check for creditor account number \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void fraud_check_for_creditor_account_number(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;funds are available in debtor account \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void funds_are_available_in_debtor_account(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;clearing house check for \&quot;\&quot;NEFT\&quot;\&quot; with status \&quot;\&quot;ACTIVE\&quot;\&quot;&quot;)&#10;public void clearing_house_check_for_neft_with_status_active() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
-The step 'the debtor account is ""true""' and 11 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the debtor account is \"\"true\"\"")
-public void the_debtor_account_is_true() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the debtor account balance is \"\"{double}\"\"")
-public void the_debtor_account_balance_is(Double double1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the creditor name is \"\"Arpit\"\"")
-public void the_creditor_name_is_arpit() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the creditor account number is \"\"{int}\"\"")
-public void the_creditor_account_number_is(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the amount is \"\"{double}\"\"")
-public void the_amount_is(Double double1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the clearing house name is \"\"NEFT\"\"")
-public void the_clearing_house_name_is_neft() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the clearing house status is \"\"ACTIVE\"\"")
-public void the_clearing_house_status_is_active() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("check qualification status for debtor account \"\"true\"\" with clearing house \"\"NEFT\"\", amount \"\"{double}\"\", creditor name \"\"Arpit\"\", creditor account number \"\"{int}\"\"")
-public void check_qualification_status_for_debtor_account_true_with_clearing_house_neft_amount_creditor_name_arpit_creditor_account_number(Double double1, Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("sanction check for creditor \"\"Arpit\"\"")
-public void sanction_check_for_creditor_arpit() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("fraud check for creditor account number \"\"{int}\"\"")
-public void fraud_check_for_creditor_account_number(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("funds are available in debtor account \"\"{int}\"\"")
-public void funds_are_available_in_debtor_account(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("clearing house check for \"\"NEFT\"\" with status \"\"ACTIVE\"\"")
-public void clearing_house_check_for_neft_with_status_active() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-]]></error>
+  <testcase name="Process payment with various flow conditions #2" classname="Basic Payment Flow with Validations" time="0.112">
+    <failure message="Debtor account is not active" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Debtor account is not active
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.payment_demo.stepDefination.stepDefination.thePaymentIsInitiated(stepDefination.java:66)
+	at ✽.the payment is initiated(file:///C:/Users/arpit/Desktop/Desktop/payment_demo/payment_demo/src/test/java/com/payment_demo/features/payment.feature:17)
+]]></failure>
     <system-out><![CDATA[
-Scenario Outline: End-to-End Payment Processing                                                                                                                                 # src/test/java/com/payment_demo/features/payment.feature:31
-  Given the sanction list is:                                                                                                                                                   # com.payment_demo.stepDefination.stepDefination.sanctionListIs(io.cucumber.datatable.DataTable)
-    | Arpit       |
-    | Blacklisted |
-    | Terror Org  |
-  And the fraud list is:                                                                                                                                                        # com.payment_demo.stepDefination.stepDefination.fraudListIs(io.cucumber.datatable.DataTable)
+Scenario Outline: Process payment with various flow conditions # src/test/java/com/payment_demo/features/payment.feature:26
+  Given the sanction list is:                                  # com.payment_demo.stepDefination.stepDefination.theSanctionListIs(io.cucumber.datatable.DataTable)
+    | John Doe   |
+    | BannedUser |
+  And the fraud list is:                                       # com.payment_demo.stepDefination.stepDefination.theFraudListIs(io.cucumber.datatable.DataTable)
     | 1234567890 |
-    | 9999999999 |
-  Given the debtor account is ""true""
-  And the debtor account balance is ""6000.00""
-  And the creditor name is ""Arpit""
-  And the creditor account number is ""1234567891""
-  And the amount is ""1000.00""
-  And the clearing house name is ""NEFT""
-  And the clearing house status is ""ACTIVE""
-  When the payment is initiated                                                                                                                                                 # com.payment_demo.stepDefination.stepDefination.paymentIsInitiated()
-  Then check qualification status for debtor account ""true"" with clearing house ""NEFT"", amount ""1000.00"", creditor name ""Arpit"", creditor account number ""1234567891""
-  Then sanction check for creditor ""Arpit""
-  Then fraud check for creditor account number ""1234567891""
-  Then funds are available in debtor account ""9876543210""
-  Then clearing house check for ""NEFT"" with status ""ACTIVE""
-  Then transaction status should be evaluated                                                                                                                                   # com.payment_demo.stepDefination.stepDefination.transactionStatus()
+    | 9876543210 |
+  Given the debtor account is "inactive"                       # com.payment_demo.stepDefination.stepDefination.theDebtorAccountIs(java.lang.String)
+  And the debtor account balance is "10000"                    # com.payment_demo.stepDefination.stepDefination.theDebtorAccountBalanceIs(java.lang.String)
+  And the transfer amount is "5000"                            # com.payment_demo.stepDefination.stepDefination.theTransferAmountIs(java.lang.String)
+  And the creditor name is "Alice Kumar"                       # com.payment_demo.stepDefination.stepDefination.theCreditorNameIs(java.lang.String)
+  And the creditor account number is "1111222233"              # com.payment_demo.stepDefination.stepDefination.theCreditorAccountNumberIs(java.lang.String)
+  When the payment is initiated                                # com.payment_demo.stepDefination.stepDefination.thePaymentIsInitiated()
+      java.lang.AssertionError: Debtor account is not active
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.payment_demo.stepDefination.stepDefination.thePaymentIsInitiated(stepDefination.java:66)
+	at ✽.the payment is initiated(file:///C:/Users/arpit/Desktop/Desktop/payment_demo/payment_demo/src/test/java/com/payment_demo/features/payment.feature:17)
+
+  Then perform sanction check                                  # com.payment_demo.stepDefination.stepDefination.performSanctionCheck()
+  Then perform fraud check                                     # com.payment_demo.stepDefination.stepDefination.performFraudCheck()
+  Then perform fund check                                      # com.payment_demo.stepDefination.stepDefination.performFundCheck()
+  Then evaluate transaction status                             # com.payment_demo.stepDefination.stepDefination.evaluateTransactionStatus()
 ]]></system-out>
   </testcase>
-  <testcase name="End-to-End Payment Processing #3" classname="End-to-End Payment Processing Workflow" time="0.151">
-    <error message="The step &apos;the debtor account is &quot;&quot;true&quot;&quot;&apos; and 11 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the debtor account is \&quot;\&quot;true\&quot;\&quot;&quot;)&#10;public void the_debtor_account_is_true() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the debtor account balance is \&quot;\&quot;{double}\&quot;\&quot;&quot;)&#10;public void the_debtor_account_balance_is(Double double1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the creditor name is \&quot;\&quot;Aman\&quot;\&quot;&quot;)&#10;public void the_creditor_name_is_aman() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the creditor account number is \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void the_creditor_account_number_is(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the amount is \&quot;\&quot;{double}\&quot;\&quot;&quot;)&#10;public void the_amount_is(Double double1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the clearing house name is \&quot;\&quot;RTGS\&quot;\&quot;&quot;)&#10;public void the_clearing_house_name_is_rtgs() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the clearing house status is \&quot;\&quot;ACTIVE\&quot;\&quot;&quot;)&#10;public void the_clearing_house_status_is_active() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;check qualification status for debtor account \&quot;\&quot;true\&quot;\&quot; with clearing house \&quot;\&quot;RTGS\&quot;\&quot;, amount \&quot;\&quot;{double}\&quot;\&quot;, creditor name \&quot;\&quot;Aman\&quot;\&quot;, creditor account number \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void check_qualification_status_for_debtor_account_true_with_clearing_house_rtgs_amount_creditor_name_aman_creditor_account_number(Double double1, Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;sanction check for creditor \&quot;\&quot;Aman\&quot;\&quot;&quot;)&#10;public void sanction_check_for_creditor_aman() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;fraud check for creditor account number \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void fraud_check_for_creditor_account_number(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;funds are available in debtor account \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void funds_are_available_in_debtor_account(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;clearing house check for \&quot;\&quot;RTGS\&quot;\&quot; with status \&quot;\&quot;ACTIVE\&quot;\&quot;&quot;)&#10;public void clearing_house_check_for_rtgs_with_status_active() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
-The step 'the debtor account is ""true""' and 11 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the debtor account is \"\"true\"\"")
-public void the_debtor_account_is_true() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the debtor account balance is \"\"{double}\"\"")
-public void the_debtor_account_balance_is(Double double1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the creditor name is \"\"Aman\"\"")
-public void the_creditor_name_is_aman() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the creditor account number is \"\"{int}\"\"")
-public void the_creditor_account_number_is(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the amount is \"\"{double}\"\"")
-public void the_amount_is(Double double1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the clearing house name is \"\"RTGS\"\"")
-public void the_clearing_house_name_is_rtgs() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the clearing house status is \"\"ACTIVE\"\"")
-public void the_clearing_house_status_is_active() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("check qualification status for debtor account \"\"true\"\" with clearing house \"\"RTGS\"\", amount \"\"{double}\"\", creditor name \"\"Aman\"\", creditor account number \"\"{int}\"\"")
-public void check_qualification_status_for_debtor_account_true_with_clearing_house_rtgs_amount_creditor_name_aman_creditor_account_number(Double double1, Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("sanction check for creditor \"\"Aman\"\"")
-public void sanction_check_for_creditor_aman() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("fraud check for creditor account number \"\"{int}\"\"")
-public void fraud_check_for_creditor_account_number(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("funds are available in debtor account \"\"{int}\"\"")
-public void funds_are_available_in_debtor_account(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("clearing house check for \"\"RTGS\"\" with status \"\"ACTIVE\"\"")
-public void clearing_house_check_for_rtgs_with_status_active() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-]]></error>
+  <testcase name="Process payment with various flow conditions #3" classname="Basic Payment Flow with Validations" time="0.131">
+    <failure message="Sanction check failed for John Doe" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Sanction check failed for John Doe
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.payment_demo.stepDefination.stepDefination.performSanctionCheck(stepDefination.java:82)
+	at ✽.perform sanction check(file:///C:/Users/arpit/Desktop/Desktop/payment_demo/payment_demo/src/test/java/com/payment_demo/features/payment.feature:18)
+]]></failure>
     <system-out><![CDATA[
-Scenario Outline: End-to-End Payment Processing                                                                                                                                # src/test/java/com/payment_demo/features/payment.feature:32
-  Given the sanction list is:                                                                                                                                                  # com.payment_demo.stepDefination.stepDefination.sanctionListIs(io.cucumber.datatable.DataTable)
-    | Arpit       |
-    | Blacklisted |
-    | Terror Org  |
-  And the fraud list is:                                                                                                                                                       # com.payment_demo.stepDefination.stepDefination.fraudListIs(io.cucumber.datatable.DataTable)
+Scenario Outline: Process payment with various flow conditions # src/test/java/com/payment_demo/features/payment.feature:27
+  Given the sanction list is:                                  # com.payment_demo.stepDefination.stepDefination.theSanctionListIs(io.cucumber.datatable.DataTable)
+    | John Doe   |
+    | BannedUser |
+  And the fraud list is:                                       # com.payment_demo.stepDefination.stepDefination.theFraudListIs(io.cucumber.datatable.DataTable)
     | 1234567890 |
-    | 9999999999 |
-  Given the debtor account is ""true""
-  And the debtor account balance is ""4000.00""
-  And the creditor name is ""Aman""
-  And the creditor account number is ""1234567890""
-  And the amount is ""3000.00""
-  And the clearing house name is ""RTGS""
-  And the clearing house status is ""ACTIVE""
-  When the payment is initiated                                                                                                                                                # com.payment_demo.stepDefination.stepDefination.paymentIsInitiated()
-  Then check qualification status for debtor account ""true"" with clearing house ""RTGS"", amount ""3000.00"", creditor name ""Aman"", creditor account number ""1234567890""
-  Then sanction check for creditor ""Aman""
-  Then fraud check for creditor account number ""1234567890""
-  Then funds are available in debtor account ""9876543210""
-  Then clearing house check for ""RTGS"" with status ""ACTIVE""
-  Then transaction status should be evaluated                                                                                                                                  # com.payment_demo.stepDefination.stepDefination.transactionStatus()
+    | 9876543210 |
+  Given the debtor account is "active"                         # com.payment_demo.stepDefination.stepDefination.theDebtorAccountIs(java.lang.String)
+  And the debtor account balance is "8000"                     # com.payment_demo.stepDefination.stepDefination.theDebtorAccountBalanceIs(java.lang.String)
+  And the transfer amount is "2000"                            # com.payment_demo.stepDefination.stepDefination.theTransferAmountIs(java.lang.String)
+  And the creditor name is "John Doe"                          # com.payment_demo.stepDefination.stepDefination.theCreditorNameIs(java.lang.String)
+  And the creditor account number is "1111222233"              # com.payment_demo.stepDefination.stepDefination.theCreditorAccountNumberIs(java.lang.String)
+  When the payment is initiated                                # com.payment_demo.stepDefination.stepDefination.thePaymentIsInitiated()
+  Then perform sanction check                                  # com.payment_demo.stepDefination.stepDefination.performSanctionCheck()
+      java.lang.AssertionError: Sanction check failed for John Doe
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.payment_demo.stepDefination.stepDefination.performSanctionCheck(stepDefination.java:82)
+	at ✽.perform sanction check(file:///C:/Users/arpit/Desktop/Desktop/payment_demo/payment_demo/src/test/java/com/payment_demo/features/payment.feature:18)
+
+  Then perform fraud check                                     # com.payment_demo.stepDefination.stepDefination.performFraudCheck()
+  Then perform fund check                                      # com.payment_demo.stepDefination.stepDefination.performFundCheck()
+  Then evaluate transaction status                             # com.payment_demo.stepDefination.stepDefination.evaluateTransactionStatus()
 ]]></system-out>
   </testcase>
-  <testcase name="End-to-End Payment Processing #4" classname="End-to-End Payment Processing Workflow" time="0.098">
-    <error message="The step &apos;the debtor account is &quot;&quot;true&quot;&quot;&apos; and 11 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the debtor account is \&quot;\&quot;true\&quot;\&quot;&quot;)&#10;public void the_debtor_account_is_true() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the debtor account balance is \&quot;\&quot;{double}\&quot;\&quot;&quot;)&#10;public void the_debtor_account_balance_is(Double double1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the creditor name is \&quot;\&quot;Rohit\&quot;\&quot;&quot;)&#10;public void the_creditor_name_is_rohit() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the creditor account number is \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void the_creditor_account_number_is(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the amount is \&quot;\&quot;{double}\&quot;\&quot;&quot;)&#10;public void the_amount_is(Double double1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the clearing house name is \&quot;\&quot;IMPS\&quot;\&quot;&quot;)&#10;public void the_clearing_house_name_is_imps() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the clearing house status is \&quot;\&quot;ACTIVE\&quot;\&quot;&quot;)&#10;public void the_clearing_house_status_is_active() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;check qualification status for debtor account \&quot;\&quot;true\&quot;\&quot; with clearing house \&quot;\&quot;IMPS\&quot;\&quot;, amount \&quot;\&quot;{double}\&quot;\&quot;, creditor name \&quot;\&quot;Rohit\&quot;\&quot;, creditor account number \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void check_qualification_status_for_debtor_account_true_with_clearing_house_imps_amount_creditor_name_rohit_creditor_account_number(Double double1, Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;sanction check for creditor \&quot;\&quot;Rohit\&quot;\&quot;&quot;)&#10;public void sanction_check_for_creditor_rohit() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;fraud check for creditor account number \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void fraud_check_for_creditor_account_number(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;funds are available in debtor account \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void funds_are_available_in_debtor_account(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;clearing house check for \&quot;\&quot;IMPS\&quot;\&quot; with status \&quot;\&quot;ACTIVE\&quot;\&quot;&quot;)&#10;public void clearing_house_check_for_imps_with_status_active() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
-The step 'the debtor account is ""true""' and 11 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the debtor account is \"\"true\"\"")
-public void the_debtor_account_is_true() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the debtor account balance is \"\"{double}\"\"")
-public void the_debtor_account_balance_is(Double double1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the creditor name is \"\"Rohit\"\"")
-public void the_creditor_name_is_rohit() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the creditor account number is \"\"{int}\"\"")
-public void the_creditor_account_number_is(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the amount is \"\"{double}\"\"")
-public void the_amount_is(Double double1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the clearing house name is \"\"IMPS\"\"")
-public void the_clearing_house_name_is_imps() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the clearing house status is \"\"ACTIVE\"\"")
-public void the_clearing_house_status_is_active() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("check qualification status for debtor account \"\"true\"\" with clearing house \"\"IMPS\"\", amount \"\"{double}\"\", creditor name \"\"Rohit\"\", creditor account number \"\"{int}\"\"")
-public void check_qualification_status_for_debtor_account_true_with_clearing_house_imps_amount_creditor_name_rohit_creditor_account_number(Double double1, Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("sanction check for creditor \"\"Rohit\"\"")
-public void sanction_check_for_creditor_rohit() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("fraud check for creditor account number \"\"{int}\"\"")
-public void fraud_check_for_creditor_account_number(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("funds are available in debtor account \"\"{int}\"\"")
-public void funds_are_available_in_debtor_account(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("clearing house check for \"\"IMPS\"\" with status \"\"ACTIVE\"\"")
-public void clearing_house_check_for_imps_with_status_active() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-]]></error>
+  <testcase name="Process payment with various flow conditions #4" classname="Basic Payment Flow with Validations" time="0.098">
+    <failure message="Fraud detected for account: 1234567890" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Fraud detected for account: 1234567890
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.payment_demo.stepDefination.stepDefination.performFraudCheck(stepDefination.java:98)
+	at ✽.perform fraud check(file:///C:/Users/arpit/Desktop/Desktop/payment_demo/payment_demo/src/test/java/com/payment_demo/features/payment.feature:19)
+]]></failure>
     <system-out><![CDATA[
-Scenario Outline: End-to-End Payment Processing                                                                                                                                # src/test/java/com/payment_demo/features/payment.feature:33
-  Given the sanction list is:                                                                                                                                                  # com.payment_demo.stepDefination.stepDefination.sanctionListIs(io.cucumber.datatable.DataTable)
-    | Arpit       |
-    | Blacklisted |
-    | Terror Org  |
-  And the fraud list is:                                                                                                                                                       # com.payment_demo.stepDefination.stepDefination.fraudListIs(io.cucumber.datatable.DataTable)
+Scenario Outline: Process payment with various flow conditions # src/test/java/com/payment_demo/features/payment.feature:28
+  Given the sanction list is:                                  # com.payment_demo.stepDefination.stepDefination.theSanctionListIs(io.cucumber.datatable.DataTable)
+    | John Doe   |
+    | BannedUser |
+  And the fraud list is:                                       # com.payment_demo.stepDefination.stepDefination.theFraudListIs(io.cucumber.datatable.DataTable)
     | 1234567890 |
-    | 9999999999 |
-  Given the debtor account is ""true""
-  And the debtor account balance is ""100.00""
-  And the creditor name is ""Rohit""
-  And the creditor account number is ""1010101010""
-  And the amount is ""500.00""
-  And the clearing house name is ""IMPS""
-  And the clearing house status is ""ACTIVE""
-  When the payment is initiated                                                                                                                                                # com.payment_demo.stepDefination.stepDefination.paymentIsInitiated()
-  Then check qualification status for debtor account ""true"" with clearing house ""IMPS"", amount ""500.00"", creditor name ""Rohit"", creditor account number ""1010101010""
-  Then sanction check for creditor ""Rohit""
-  Then fraud check for creditor account number ""1010101010""
-  Then funds are available in debtor account ""9876543210""
-  Then clearing house check for ""IMPS"" with status ""ACTIVE""
-  Then transaction status should be evaluated                                                                                                                                  # com.payment_demo.stepDefination.stepDefination.transactionStatus()
+    | 9876543210 |
+  Given the debtor account is "active"                         # com.payment_demo.stepDefination.stepDefination.theDebtorAccountIs(java.lang.String)
+  And the debtor account balance is "9000"                     # com.payment_demo.stepDefination.stepDefination.theDebtorAccountBalanceIs(java.lang.String)
+  And the transfer amount is "1000"                            # com.payment_demo.stepDefination.stepDefination.theTransferAmountIs(java.lang.String)
+  And the creditor name is "Alice Kumar"                       # com.payment_demo.stepDefination.stepDefination.theCreditorNameIs(java.lang.String)
+  And the creditor account number is "1234567890"              # com.payment_demo.stepDefination.stepDefination.theCreditorAccountNumberIs(java.lang.String)
+  When the payment is initiated                                # com.payment_demo.stepDefination.stepDefination.thePaymentIsInitiated()
+  Then perform sanction check                                  # com.payment_demo.stepDefination.stepDefination.performSanctionCheck()
+  Then perform fraud check                                     # com.payment_demo.stepDefination.stepDefination.performFraudCheck()
+      java.lang.AssertionError: Fraud detected for account: 1234567890
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.payment_demo.stepDefination.stepDefination.performFraudCheck(stepDefination.java:98)
+	at ✽.perform fraud check(file:///C:/Users/arpit/Desktop/Desktop/payment_demo/payment_demo/src/test/java/com/payment_demo/features/payment.feature:19)
+
+  Then perform fund check                                      # com.payment_demo.stepDefination.stepDefination.performFundCheck()
+  Then evaluate transaction status                             # com.payment_demo.stepDefination.stepDefination.evaluateTransactionStatus()
 ]]></system-out>
   </testcase>
-  <testcase name="End-to-End Payment Processing #5" classname="End-to-End Payment Processing Workflow" time="0.062">
-    <error message="The step &apos;the debtor account is &quot;&quot;false&quot;&quot;&apos; and 11 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the debtor account is \&quot;\&quot;false\&quot;\&quot;&quot;)&#10;public void the_debtor_account_is_false() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the debtor account balance is \&quot;\&quot;{double}\&quot;\&quot;&quot;)&#10;public void the_debtor_account_balance_is(Double double1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the creditor name is \&quot;\&quot;Dev\&quot;\&quot;&quot;)&#10;public void the_creditor_name_is_dev() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the creditor account number is \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void the_creditor_account_number_is(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the amount is \&quot;\&quot;{double}\&quot;\&quot;&quot;)&#10;public void the_amount_is(Double double1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the clearing house name is \&quot;\&quot;NEFT\&quot;\&quot;&quot;)&#10;public void the_clearing_house_name_is_neft() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the clearing house status is \&quot;\&quot;INACTIVE\&quot;\&quot;&quot;)&#10;public void the_clearing_house_status_is_inactive() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;check qualification status for debtor account \&quot;\&quot;false\&quot;\&quot; with clearing house \&quot;\&quot;NEFT\&quot;\&quot;, amount \&quot;\&quot;{double}\&quot;\&quot;, creditor name \&quot;\&quot;Dev\&quot;\&quot;, creditor account number \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void check_qualification_status_for_debtor_account_false_with_clearing_house_neft_amount_creditor_name_dev_creditor_account_number(Double double1, Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;sanction check for creditor \&quot;\&quot;Dev\&quot;\&quot;&quot;)&#10;public void sanction_check_for_creditor_dev() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;fraud check for creditor account number \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void fraud_check_for_creditor_account_number(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;funds are available in debtor account \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void funds_are_available_in_debtor_account(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;clearing house check for \&quot;\&quot;NEFT\&quot;\&quot; with status \&quot;\&quot;INACTIVE\&quot;\&quot;&quot;)&#10;public void clearing_house_check_for_neft_with_status_inactive() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
-The step 'the debtor account is ""false""' and 11 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given("the debtor account is \"\"false\"\"")
-public void the_debtor_account_is_false() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the debtor account balance is \"\"{double}\"\"")
-public void the_debtor_account_balance_is(Double double1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the creditor name is \"\"Dev\"\"")
-public void the_creditor_name_is_dev() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the creditor account number is \"\"{int}\"\"")
-public void the_creditor_account_number_is(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the amount is \"\"{double}\"\"")
-public void the_amount_is(Double double1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the clearing house name is \"\"NEFT\"\"")
-public void the_clearing_house_name_is_neft() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the clearing house status is \"\"INACTIVE\"\"")
-public void the_clearing_house_status_is_inactive() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("check qualification status for debtor account \"\"false\"\" with clearing house \"\"NEFT\"\", amount \"\"{double}\"\", creditor name \"\"Dev\"\", creditor account number \"\"{int}\"\"")
-public void check_qualification_status_for_debtor_account_false_with_clearing_house_neft_amount_creditor_name_dev_creditor_account_number(Double double1, Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("sanction check for creditor \"\"Dev\"\"")
-public void sanction_check_for_creditor_dev() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("fraud check for creditor account number \"\"{int}\"\"")
-public void fraud_check_for_creditor_account_number(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("funds are available in debtor account \"\"{int}\"\"")
-public void funds_are_available_in_debtor_account(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("clearing house check for \"\"NEFT\"\" with status \"\"INACTIVE\"\"")
-public void clearing_house_check_for_neft_with_status_inactive() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-]]></error>
+  <testcase name="Process payment with various flow conditions #5" classname="Basic Payment Flow with Validations" time="0.211">
+    <failure message="Insufficient funds" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Insufficient funds
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.payment_demo.stepDefination.stepDefination.performFundCheck(stepDefination.java:116)
+	at ✽.perform fund check(file:///C:/Users/arpit/Desktop/Desktop/payment_demo/payment_demo/src/test/java/com/payment_demo/features/payment.feature:20)
+]]></failure>
     <system-out><![CDATA[
-Scenario Outline: End-to-End Payment Processing                                                                                                                               # src/test/java/com/payment_demo/features/payment.feature:34
-  Given the sanction list is:                                                                                                                                                 # com.payment_demo.stepDefination.stepDefination.sanctionListIs(io.cucumber.datatable.DataTable)
-    | Arpit       |
-    | Blacklisted |
-    | Terror Org  |
-  And the fraud list is:                                                                                                                                                      # com.payment_demo.stepDefination.stepDefination.fraudListIs(io.cucumber.datatable.DataTable)
+Scenario Outline: Process payment with various flow conditions # src/test/java/com/payment_demo/features/payment.feature:29
+  Given the sanction list is:                                  # com.payment_demo.stepDefination.stepDefination.theSanctionListIs(io.cucumber.datatable.DataTable)
+    | John Doe   |
+    | BannedUser |
+  And the fraud list is:                                       # com.payment_demo.stepDefination.stepDefination.theFraudListIs(io.cucumber.datatable.DataTable)
     | 1234567890 |
-    | 9999999999 |
-  Given the debtor account is ""false""
-  And the debtor account balance is ""3000.00""
-  And the creditor name is ""Dev""
-  And the creditor account number is ""2020202020""
-  And the amount is ""200.00""
-  And the clearing house name is ""NEFT""
-  And the clearing house status is ""INACTIVE""
-  When the payment is initiated                                                                                                                                               # com.payment_demo.stepDefination.stepDefination.paymentIsInitiated()
-  Then check qualification status for debtor account ""false"" with clearing house ""NEFT"", amount ""200.00"", creditor name ""Dev"", creditor account number ""2020202020""
-  Then sanction check for creditor ""Dev""
-  Then fraud check for creditor account number ""2020202020""
-  Then funds are available in debtor account ""9876543210""
-  Then clearing house check for ""NEFT"" with status ""INACTIVE""
-  Then transaction status should be evaluated                                                                                                                                 # com.payment_demo.stepDefination.stepDefination.transactionStatus()
-]]></system-out>
-  </testcase>
-  <testcase name="End-to-End Payment Processing #6" classname="End-to-End Payment Processing Workflow" time="0.05">
-    <error message="The step &apos;the debtor account is &quot;&quot;true&quot;&quot;&apos; and 11 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the debtor account is \&quot;\&quot;true\&quot;\&quot;&quot;)&#10;public void the_debtor_account_is_true() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the debtor account balance is \&quot;\&quot;{double}\&quot;\&quot;&quot;)&#10;public void the_debtor_account_balance_is(Double double1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the creditor name is \&quot;\&quot;Suresh\&quot;\&quot;&quot;)&#10;public void the_creditor_name_is_suresh() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the creditor account number is \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void the_creditor_account_number_is(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the amount is \&quot;\&quot;{double}\&quot;\&quot;&quot;)&#10;public void the_amount_is(Double double1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the clearing house name is \&quot;\&quot;RTGS\&quot;\&quot;&quot;)&#10;public void the_clearing_house_name_is_rtgs() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Given(&quot;the clearing house status is \&quot;\&quot;INACTIVE\&quot;\&quot;&quot;)&#10;public void the_clearing_house_status_is_inactive() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;check qualification status for debtor account \&quot;\&quot;true\&quot;\&quot; with clearing house \&quot;\&quot;RTGS\&quot;\&quot;, amount \&quot;\&quot;{double}\&quot;\&quot;, creditor name \&quot;\&quot;Suresh\&quot;\&quot;, creditor account number \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void check_qualification_status_for_debtor_account_true_with_clearing_house_rtgs_amount_creditor_name_suresh_creditor_account_number(Double double1, Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;sanction check for creditor \&quot;\&quot;Suresh\&quot;\&quot;&quot;)&#10;public void sanction_check_for_creditor_suresh() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;fraud check for creditor account number \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void fraud_check_for_creditor_account_number(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;funds are available in debtor account \&quot;\&quot;{int}\&quot;\&quot;&quot;)&#10;public void funds_are_available_in_debtor_account(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;clearing house check for \&quot;\&quot;RTGS\&quot;\&quot; with status \&quot;\&quot;INACTIVE\&quot;\&quot;&quot;)&#10;public void clearing_house_check_for_rtgs_with_status_inactive() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
-The step 'the debtor account is ""true""' and 11 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
+    | 9876543210 |
+  Given the debtor account is "active"                         # com.payment_demo.stepDefination.stepDefination.theDebtorAccountIs(java.lang.String)
+  And the debtor account balance is "4000"                     # com.payment_demo.stepDefination.stepDefination.theDebtorAccountBalanceIs(java.lang.String)
+  And the transfer amount is "5000"                            # com.payment_demo.stepDefination.stepDefination.theTransferAmountIs(java.lang.String)
+  And the creditor name is "Alice Kumar"                       # com.payment_demo.stepDefination.stepDefination.theCreditorNameIs(java.lang.String)
+  And the creditor account number is "1111222233"              # com.payment_demo.stepDefination.stepDefination.theCreditorAccountNumberIs(java.lang.String)
+  When the payment is initiated                                # com.payment_demo.stepDefination.stepDefination.thePaymentIsInitiated()
+  Then perform sanction check                                  # com.payment_demo.stepDefination.stepDefination.performSanctionCheck()
+  Then perform fraud check                                     # com.payment_demo.stepDefination.stepDefination.performFraudCheck()
+  Then perform fund check                                      # com.payment_demo.stepDefination.stepDefination.performFundCheck()
+      java.lang.AssertionError: Insufficient funds
+	at org.junit.Assert.fail(Assert.java:89)
+	at com.payment_demo.stepDefination.stepDefination.performFundCheck(stepDefination.java:116)
+	at ✽.perform fund check(file:///C:/Users/arpit/Desktop/Desktop/payment_demo/payment_demo/src/test/java/com/payment_demo/features/payment.feature:20)
 
-@Given("the debtor account is \"\"true\"\"")
-public void the_debtor_account_is_true() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the debtor account balance is \"\"{double}\"\"")
-public void the_debtor_account_balance_is(Double double1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the creditor name is \"\"Suresh\"\"")
-public void the_creditor_name_is_suresh() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the creditor account number is \"\"{int}\"\"")
-public void the_creditor_account_number_is(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the amount is \"\"{double}\"\"")
-public void the_amount_is(Double double1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the clearing house name is \"\"RTGS\"\"")
-public void the_clearing_house_name_is_rtgs() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("the clearing house status is \"\"INACTIVE\"\"")
-public void the_clearing_house_status_is_inactive() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("check qualification status for debtor account \"\"true\"\" with clearing house \"\"RTGS\"\", amount \"\"{double}\"\", creditor name \"\"Suresh\"\", creditor account number \"\"{int}\"\"")
-public void check_qualification_status_for_debtor_account_true_with_clearing_house_rtgs_amount_creditor_name_suresh_creditor_account_number(Double double1, Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("sanction check for creditor \"\"Suresh\"\"")
-public void sanction_check_for_creditor_suresh() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("fraud check for creditor account number \"\"{int}\"\"")
-public void fraud_check_for_creditor_account_number(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("funds are available in debtor account \"\"{int}\"\"")
-public void funds_are_available_in_debtor_account(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("clearing house check for \"\"RTGS\"\" with status \"\"INACTIVE\"\"")
-public void clearing_house_check_for_rtgs_with_status_inactive() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-]]></error>
-    <system-out><![CDATA[
-Scenario Outline: End-to-End Payment Processing                                                                                                                                  # src/test/java/com/payment_demo/features/payment.feature:35
-  Given the sanction list is:                                                                                                                                                    # com.payment_demo.stepDefination.stepDefination.sanctionListIs(io.cucumber.datatable.DataTable)
-    | Arpit       |
-    | Blacklisted |
-    | Terror Org  |
-  And the fraud list is:                                                                                                                                                         # com.payment_demo.stepDefination.stepDefination.fraudListIs(io.cucumber.datatable.DataTable)
-    | 1234567890 |
-    | 9999999999 |
-  Given the debtor account is ""true""
-  And the debtor account balance is ""5000.00""
-  And the creditor name is ""Suresh""
-  And the creditor account number is ""1111111111""
-  And the amount is ""1000.00""
-  And the clearing house name is ""RTGS""
-  And the clearing house status is ""INACTIVE""
-  When the payment is initiated                                                                                                                                                  # com.payment_demo.stepDefination.stepDefination.paymentIsInitiated()
-  Then check qualification status for debtor account ""true"" with clearing house ""RTGS"", amount ""1000.00"", creditor name ""Suresh"", creditor account number ""1111111111""
-  Then sanction check for creditor ""Suresh""
-  Then fraud check for creditor account number ""1111111111""
-  Then funds are available in debtor account ""9876543210""
-  Then clearing house check for ""RTGS"" with status ""INACTIVE""
-  Then transaction status should be evaluated                                                                                                                                    # com.payment_demo.stepDefination.stepDefination.transactionStatus()
+  Then evaluate transaction status                             # com.payment_demo.stepDefination.stepDefination.evaluateTransactionStatus()
 ]]></system-out>
   </testcase>
 </testsuite>
